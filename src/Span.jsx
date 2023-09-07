@@ -1,8 +1,8 @@
 
-function Span() {
+function Span({id,ti}) {
   return (
     <div>
-        <span id='s1'>aquí aparecerá tu nombre</span>
+        <span id={id}>{ti}</span>
     </div>
   )
 }

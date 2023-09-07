@@ -6,13 +6,21 @@ import Span from './Span'
 
 function App() {
   const [nombre, setNombre] = useState('')
+  const [apellido, setApellido] = useState('')
 
   return (
     <div>
-      <h1>Escribe tu nombre</h1>
+      <h3>Escribe tu nombre</h3>
       <Input nom={setNombre} />
-      <Boton nombre = {nombre} />
-      <Span />
+      <Boton texto = {nombre} id ='s1' />
+      <Span id = 's1' ti='aquí aparecerá tu nombre' />
+
+      <h3>Escribe tu apellido</h3>
+      <Input nom={setApellido} />
+      <Boton texto = {apellido} id ='s2' />
+      <Span id = 's2' ti='aquí aparecerá tu apellido' />
+      <Boton texto = {nombre + ' ' + apellido} id ='s3' />
+      <Span id = 's3' ti='aquí aparecerá tu nombre y apellido' />
     </div>
   )
 }

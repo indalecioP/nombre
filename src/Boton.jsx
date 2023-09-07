@@ -1,10 +1,11 @@
 
-function Boton({nombre}) {
+function Boton({texto,id}) {
   return (
     <div>
         <button
-        onClick={()=>s1.textContent = nombre}
+        onClick={()=>document.getElementById(id).textContent = texto}
         >aplicar</button>
+
     </div>
   )
 }
